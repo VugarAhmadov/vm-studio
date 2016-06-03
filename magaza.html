@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VM Studio</title>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/custom.css" />
+
+    <!-- scripts -->
+    <script type="text/javascript" src="scripts/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+    <script type="text/javascript" src="scripts/isotope.pkgd.min.js"></script>
+
+</head>
+<body>
+
+<!--============================  Top Panel  ============================-->
+<div class="panel">
+    <div class="toppanel">
+        <div class="center">
+            <div class="umumi intro">
+                <h1>VM STUDIO</h1>
+                <h2>Qeydiyyat Bölməsi</h2>
+                <h3>Qeydiyyatdan keçin və məhsulları şifariş verməyə başlayın!</h3>
+            </div>
+
+            <div class="umumi login">
+                <h1>Daxil Ol</h1>
+
+                <label class="grey" for="username">İstifadəçi adı:</label>
+                <input class="field" type="text" name="username" id="username" size="23">
+                <label class="grey" for="password">Şifrə:</label>
+                <input class="field" type="password" name="password" id="password" size="23">
+                <label>
+                    <input type="checkbox" name="rememberme" id="rememberme" checked="checked" value="1">
+                    &nbsp;Xatırla
+                </label>
+                <input type="submit" name="submit" value="Daxil Ol" class="bt_login">
+            </div>
+
+            <div class="umumi signup">
+                <h1>Üzv Deyilsən? Qeydiyyatdan keç!</h1>
+
+                <label class="grey" for="username">İstifadəçi adı:</label>
+                <input class="field" type="text" name="username" class="username" size="23">
+                <label class="grey" for="email">Email:</label>
+                <input class="field" type="text" name="email" id="email" size="23">
+                <label>Şifrə mailivizə göndəriləcək.</label>
+                <input type="submit" name="submit" value="Qeydiyyatdan keç" class="bt_register">
+            </div>
+        </div>
+    </div>
+
+    <div class="tab">
+        <div class="center">
+            <ul class="login2">
+                <li class="sol">&nbsp;</li>
+                <li>Salam Qonaq!</li>
+                <li class="sep">|</li>
+                <li id="toggle">
+                    <a href="#" id="open" class="open" style="display: block;">Daxil Ol | Qeydiyyatdan keç</a>
+                    <a href="#" id="close" class="close" style="display: none;"> Paneli bağla</a>
+                </li>
+                <li class="sag">&nbsp;</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--==========================  Top Panel end  ===========================-->
+
+
+<div class="clear"></div>
+
+
+<!--============================  Header  ============================-->
+<div class="header">
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="center">
+
+            <!-- nav-left -->
+            <div class="nav-left">
+                <ul>
+                    <li><h1>Bizə Qoşulun :</h1></li>
+                    <li><a href="#"><em class="fa fa-facebook-square"></em></a></li>
+                    <li><a href="#"><em class="fa fa-twitter-square"></em></a></li>
+                    <li><a href="#"><em class="fa fa-instagram"></em></a></li>
+                    <li><a href="#"><em class="fa fa-youtube-square"></em></a></li>
+                </ul>
+            </div>
+
+            <!-- nav-right -->
+            <div class="nav-right">
+                <a href="#"><em class="fa fa-search"></em></a>
+                <input type="text" value="" id="search" placeholder="Axtar">
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="menu">
+        <div class="center">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="" width="280" height="50" /></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Ana Səhifə</a></li>
+                <li><a href="magaza.html">Mağaza</a></li>
+                <li><a href="sifaris.html">Məhsul Yoxdur?</a></li>
+                <li><a href="elaqe.html">Əlaqə</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+<!--==========================  Header end  ===========================-->
+
+
+<div class="clear"></div>
+
+
+<!--============================  Content  ============================-->
+<div class="content">
+    <div class="center">
+
+        <!-- Category menu -->
+        <div id="category">
+            <ul class="menu2">
+                <li class="dropdown">
+                    <ul>
+                        <li class="button">
+                            <a href="#"><em class="fa fa-plus-circle"></em>Fotoparatlar</a>
+                        </li>
+                        <li class="dropdown-menu">
+                            <ul class="tab">
+                                <li class="active" data-filter=".canon"><a href="#">Canon</a></li>
+                                <li data-filter=".nikon"><a href="#">Nikon</a></li>
+                                <li data-filter=".sony"><a href="#">Sony</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <ul>
+                        <li class="button">
+                            <a href="#"><em class="fa fa-plus-circle"></em>Lensler</a>
+                        </li>
+                        <li class="dropdown-menu">
+                            <ul class="tab">
+                                <li><a href="#">Canon</a></li>
+                                <li><a href="#">Nikon</a></li>
+                                <li><a href="#">Sony</a></li>
+                                <li><a href="#">Samsung</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <ul>
+                        <li class="button">
+                            <a href="#"><em class="fa fa-plus-circle"></em>Tripodlar</a>
+                        </li>
+                        <li class="dropdown-menu">
+                            <ul class="tab">
+                                <li><a href="#">Canon</a></li>
+                                <li><a href="#">Nikon</a></li>
+                                <li><a href="#">Sony</a></li>
+                                <li><a href="#">Samsung</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- sebet -->
+            <div class="basket">
+                <table>
+                    <thead>
+                        <tr style="color: #f4a460">
+                            <th colspan="2"><em class="fa fa-shopping-basket"></th>
+                        </tr>
+
+                        <tr>
+                            <th>Sayı</th>
+                            <th>Məbləğ</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td>250AZN</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="#">Səbətə ətraflı bax</a></td>
+                            <td><a href="#">Ödəniş et!</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!--mehsullar -->
+        <div class="mehsullar">
+
+            <div class="items cameras nikon">
+                <img src="images/cameras/nikon/nikon%20d4s.jpg" alt="" width="290" height="200" />
+                <h1>Nikon D4S</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Nikon D4S</h1>
+                    <h2>15 AZN</h2>
+                    <a href="product.html"><em class="fa fa-eye"></em><br /></a>
+                    <a href="product.html">Ətraflı bax</a>
+                </div>
+            </div>
+            <div class="items cameras nikon">
+                <img src="images/cameras/nikon/nikon%20d4ss.jpg" alt="" width="290" height="200" />
+                <h1>Nikon D4Ss</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Nikon D4Ss</h1>
+                    <h2>15 AZN</h2>
+                    <a href="product.html"><em class="fa fa-eye"></em><br /></a>
+                    <a href="product.html">Ətraflı bax</a>
+                </div>
+            </div>
+            <div class="items cameras nikon">
+                <img src="images/cameras/nikon/nikon%20d610.jpg" alt="" width="290" height="200" />
+                <h1>Nikon D610</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Nikon D610</h1>
+                    <h2>15 AZN</h2>
+                    <a href="product.html"><em class="fa fa-eye"></em><br /></a>
+                    <a href="product.html">Ətraflı bax</a>
+                </div>
+            </div>
+            <div class="items cameras nikon">
+                <img src="images/cameras/nikon/nikon%20d750.jpg" alt="" width="290" height="200" />
+                <h1>Nikon D650</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Nikon D650</h1>
+                    <h2>15 AZN</h2>
+                    <a href="product.html"><em class="fa fa-eye"></em><br /></a>
+                    <a href="product.html">Ətraflı bax</a>
+                </div>
+            </div>
+            <div class="items cameras nikon">
+                <img src="images/cameras/nikon/nikon%20d7200.jpg" alt="" width="290" height="200" />
+                <h1>Nikon D7200</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Nikon D7200</h1>
+                    <h2>15 AZN</h2>
+                    <a href="product.html"><em class="fa fa-eye"></em><br /></a>
+                    <a href="product.html">Ətraflı bax</a>
+                </div>
+            </div>
+
+            <div class="items cameras canon">
+                <img src="images/cameras/canon/eos%20100d.jpg" alt="" width="290" height="200" />
+                <h1>Canon EOS 100D</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Canon EOS 100D</h1>
+                    <h2>15 AZN</h2>
+                    <a href="product.html"><em class="fa fa-eye"></em><br /></a>
+                    <a href="product.html">Ətraflı bax</a>
+                </div>
+            </div>
+            <div class="items cameras canon">
+                <img src="images/cameras/canon/eos%20700d.jpg" alt="" width="290" height="200" />
+                <h1>Canon EOS 700D</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Canon EOS 700D</h1>
+                    <h2>15 AZN</h2>
+                    <a href="product.html"><em class="fa fa-eye"></em><br /></a>
+                    <a href="product.html">Ətraflı bax</a>
+                </div>
+            </div>
+            <div class="items cameras canon">
+                <img src="images/cameras/canon/eos%201200d.jpg" alt="" width="290" height="200" />
+                <h1>Canon EOS 1200D</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Canon EOS 1200D</h1>
+                    <h2>15 AZN</h2>
+                    <a href="product.html"><em class="fa fa-eye"></em><br /></a>
+                    <a href="product.html">Ətraflı bax</a>
+                </div>
+            </div>
+            <div class="items cameras canon">
+                <img src="images/cameras/canon/powershoot%20n.jpg" alt="" width="290" height="200" />
+                <h1>Canon POWERSHOOT 20N</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Canon POWERSHOOT 20N</h1>
+                    <h2>15 AZN</h2>
+                    <a href="product.html"><em class="fa fa-eye"></em><br /></a>
+                    <a href="product.html">Ətraflı bax</a>
+                </div>
+            </div>
+
+            <div class="items cameras sony">
+                <img src="images/cameras/sony/a58.jpg" alt="" width="290" height="200" />
+                <h1>α58 A-mount Camera with APS-C Sensor</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>α58 A-mount Camera with APS-C Sensor</h1>
+                    <h2>15 AZN</h2>
+                    <a href="product.html"><em class="fa fa-eye"></em><br /></a>
+                    <a href="product.html">Ətraflı bax</a>
+                </div>
+            </div>
+            <div class="items cameras sony">
+                <img src="images/cameras/sony/a77.jpg" alt="" width="290" height="200" />
+                <h1>α77 II A-mount camera with APS-C sensor</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>α77 II A-mount camera with APS-C sensor</h1>
+                    <h2>15 AZN</h2>
+                    <a href="product.html"><em class="fa fa-eye"></em><br /></a>
+                    <a href="product.html">Ətraflı bax</a>
+                </div>
+            </div>
+            <div class="items cameras sony">
+                <img src="images/cameras/sony/a99v.jpg" alt="" width="290" height="200" />
+                <h1>α99V A-mount Camera with 35 mm Full-frame Sensor</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>α99V A-mount Camera with 35 mm Full-frame Sensor</h1>
+                    <h2>15 AZN</h2>
+                    <a href="product.html"><em class="fa fa-eye"></em><br /></a>
+                    <a href="product.html">Ətraflı bax</a>
+                </div>
+            </div>
+
+
+            <div class="items lenses canon">
+               <img src="images/lenses/lens-canon1.jpg" alt="" width="290" height="200" />
+               <h1>Canon D500</h1>
+               <h2>15 AZN</h2>
+               <div class="item-hover">
+                   <h1>Canon D500</h1>
+                   <h2>15 AZN</h2>
+                   <a href="#"><em class="fa fa-eye"></em><br /></a>
+                   <a href="#">Ətraflı bax</a>
+               </div>
+           </div>
+            <div class="items canon">
+                <img src="images/lenses/lens-canon2.jpg" alt="" width="290" height="200" />
+                <h1>Canon D500</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Canon D500</h1>
+                    <h2>15 AZN</h2>
+                    <a href="#"><em class="fa fa-eye"></em><br /></a>
+                    <a href="#">Ətraflı bax</a>
+                </div>
+            </div>
+            <div class="items sony">
+                <img src="images/lenses/lens-canon3.jpg" alt="" width="290" height="200" />
+                <h1>Canon D500</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Canon D500</h1>
+                    <h2>15 AZN</h2>
+                    <a href="#"><em class="fa fa-eye"></em><br /></a>
+                    <a href="#">Ətraflı bax</a>
+                </div>
+            </div>
+            <div class="items sony">
+                <img src="images/lenses/lens-canon4.jpg" alt="" width="290" height="200" />
+                <h1>Canon D500</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Canon D500</h1>
+                    <h2>15 AZN</h2>
+                    <a href="#"><em class="fa fa-eye"></em><br /></a>
+                    <a href="#">Ətraflı bax</a>
+                </div>
+            </div>
+            <div class="items nikon">
+                <img src="images/lenses/lens-canon5.jpg" alt="" width="290" height="200" />
+                <h1>Canon D500</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Canon D500</h1>
+                    <h2>15 AZN</h2>
+                    <a href="#"><em class="fa fa-eye"></em><br /></a>
+                    <a href="#">Ətraflı bax</a>
+                </div>
+            </div>
+
+            <div class="items tripots sony">
+                <img src="images/tripots.png" alt="" width="290" height="200" />
+                <h1>Sony Tripot</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Sony Tripot</h1>
+                    <h2>15 AZN</h2>
+                    <a href="product.html"><em class="fa fa-eye"></em><br /></a>
+                    <a href="product.html">Ətraflı bax</a>
+                </div>
+            </div>
+            <div class="items tripots canon">
+                <img src="images/tripots3.jpg" alt="" width="290" height="200" />
+                <h1>Triopt canon</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Tripots canon</h1>
+                    <h2>15 AZN</h2>
+                    <a href="product.html"><em class="fa fa-eye"></em><br /></a>
+                    <a href="product.html">Ətraflı bax</a>
+                </div>
+            </div>
+            <div class="items tripots nikon">
+                <img src="images/tripots2.jpg" alt="" width="290" height="200" />
+                <h1>Tripots nikon</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Tripots nikon</h1>
+                    <h2>15 AZN</h2>
+                    <a href="product.html"><em class="fa fa-eye"></em><br /></a>
+                    <a href="product.html">Ətraflı bax</a>
+                </div>
+            </div>
+
+            <div class="items nikon">
+                <img src="images/lenses/lens-nikon1.jpg" alt="" width="290" height="200" />
+                <h1>Canon D500</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Canon D500</h1>
+                    <h2>15 AZN</h2>
+                    <a href="#"><em class="fa fa-eye"></em><br /></a>
+                    <a href="#">Ətraflı bax</a>
+                </div>
+            </div>
+            <div class="items canon">
+                <img src="images/lenses/lens-nikon2.jpg" alt="" width="290" height="200" />
+                <h1>Canon D500</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Canon D500</h1>
+                    <h2>15 AZN</h2>
+                    <a href="#"><em class="fa fa-eye"></em><br /></a>
+                    <a href="#">Ətraflı bax</a>
+                </div>
+            </div>
+            <div class="items nikon">
+                <img src="images/lenses/lens-nikon4.jpg" alt="" width="290" height="200" />
+                <h1>Canon D500</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Canon D500</h1>
+                    <h2>15 AZN</h2>
+                    <a href="#"><em class="fa fa-eye"></em><br /></a>
+                    <a href="#">Ətraflı bax</a>
+                </div>
+            </div>
+            <div class="items sony">
+                <img src="images/lenses/lens-nikon2.jpg" alt="" width="290" height="200" />
+                <h1>Canon D500</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Canon D500</h1>
+                    <h2>15 AZN</h2>
+                    <a href="#"><em class="fa fa-eye"></em><br /></a>
+                    <a href="#">Ətraflı bax</a>
+                </div>
+            </div>
+            <div class="items sony">
+                <img src="images/lenses/lens-nikon2.jpg" alt="" width="290" height="200" />
+                <h1>Canon D500</h1>
+                <h2>15 AZN</h2>
+                <div class="item-hover">
+                    <h1>Canon D500</h1>
+                    <h2>15 AZN</h2>
+                    <a href="#"><em class="fa fa-eye"></em><br /></a>
+                    <a href="#">Ətraflı bax</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!--==========================  Content End  ===========================-->
+
+
+<div class="clear"></div>
+
+
+<!--============================  Footer  ============================-->
+<div class="footer">
+    <div class="main-footer">
+        <div class="center">
+            <div class="foot left">
+                <ul>
+                    <li><a href="index.html">Ana Səhifə</a></li>
+                    <li><a href="magaza.html">Mağaza</a></li>
+                    <li><a href="sifaris.html">Məhsul Yoxdur?</a></li>
+                    <li><a href="elaqe.html">Əlaqə</a></li>
+                </ul>
+            </div>
+            <div class="foot middle">
+                <h1>Abunə Olun!</h1>
+                <ul>
+                    <li>
+                        <a href="#"><em class="fa fa-facebook-square" id="facebook"></em></a>
+                    </li>
+                    <li>
+                        <a href="#"><em class="fa fa-twitter-square" id="twitter"></em></a>
+                    </li>
+                    <li>
+                        <a href="#"><em class="fa fa-google-plus-square" id="google"></em></a>
+                    </li>
+                    <li>
+                        <a href="#"><em class="fa fa-linkedin-square" id="linkedin"></em></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="foot right">
+                <a href="index.html"><img src="images/logo.png" align="right" alt="" width="350" height="70" /></a>
+                <p>© Bütün Hüquqlar Qorunur.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="center">
+            <h1>Bu vebsayt <a href="http://mathouse.org/vugarcv/">Vüqar Əhmədov</a> tərəfindən yaradılıb.</h1>
+        </div>
+    </div>
+</div>
+<!--==========================  Footer End  ===========================-->
+
+
+</body>
+</html>

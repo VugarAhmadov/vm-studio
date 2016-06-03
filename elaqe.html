@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VM Studio</title>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/custom.css" />
+
+    <!-- scripts -->
+    <script type="text/javascript" src="scripts/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+
+</head>
+<body>
+
+<!--============================  Top Panel  ============================-->
+<div class="panel">
+    <div class="toppanel">
+        <div class="center">
+            <div class="umumi intro">
+                <h1>VM STUDIO</h1>
+                <h2>Qeydiyyat Bölməsi</h2>
+                <h3>Qeydiyyatdan keçin və məhsulları şifariş verməyə başlayın!</h3>
+            </div>
+
+            <div class="umumi login">
+                <h1>Daxil Ol</h1>
+
+                <label class="grey" for="username">İstifadəçi adı:</label>
+                <input class="field" type="text" name="username" id="username" size="23">
+                <label class="grey" for="password">Şifrə:</label>
+                <input class="field" type="password" name="password" id="password" size="23">
+                <label>
+                    <input type="checkbox" name="rememberme" id="rememberme" checked="checked" value="1">
+                    &nbsp;Xatırla
+                </label>
+                <input type="submit" name="submit" value="Daxil Ol" class="bt_login">
+            </div>
+
+            <div class="umumi signup">
+                <h1>Üzv Deyilsən? Qeydiyyatdan keç!</h1>
+
+                <label class="grey" for="username">İstifadəçi adı:</label>
+                <input class="field" type="text" name="username" class="username" size="23">
+                <label class="grey" for="email">Email:</label>
+                <input class="field" type="text" name="email" id="email" size="23">
+                <label>Şifrə mailivizə göndəriləcək.</label>
+                <input type="submit" name="submit" value="Qeydiyyatdan keç" class="bt_register">
+            </div>
+        </div>
+    </div>
+
+    <div class="tab">
+        <div class="center">
+            <ul class="login2">
+                <li class="sol">&nbsp;</li>
+                <li>Salam Qonaq!</li>
+                <li class="sep">|</li>
+                <li id="toggle">
+                    <a href="#" id="open" class="open" style="display: block;">Daxil Ol | Qeydiyyatdan keç</a>
+                    <a href="#" id="close" class="close" style="display: none;"> Paneli bağla</a>
+                </li>
+                <li class="sag">&nbsp;</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--==========================  Top Panel end  ===========================-->
+
+
+<div class="clear"></div>
+
+
+<!--============================  Header  ============================-->
+<div class="header">
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="center">
+
+            <!-- nav-left -->
+            <div class="nav-left">
+                <ul>
+                    <li><h1>Bizə Qoşulun :</h1></li>
+                    <li><a href="#"><em class="fa fa-facebook-square"></em></a></li>
+                    <li><a href="#"><em class="fa fa-twitter-square"></em></a></li>
+                    <li><a href="#"><em class="fa fa-instagram"></em></a></li>
+                    <li><a href="#"><em class="fa fa-youtube-square"></em></a></li>
+                </ul>
+            </div>
+
+            <!-- nav-right -->
+            <div class="nav-right">
+                <a href="#"><em class="fa fa-search"></em></a>
+                <input type="text" value="" id="search" placeholder="Axtar">
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="menu">
+        <div class="center">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="" width="280" height="50" /></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Ana Səhifə</a></li>
+                <li><a href="magaza.html">Mağaza</a></li>
+                <li><a href="sifaris.html">Məhsul Yoxdur?</a></li>
+                <li><a href="elaqe.html">Əlaqə</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--==========================  Header end  ===========================-->
+
+
+<div class="clear"></div>
+
+
+<!--============================  Contact  ============================-->
+<div class="elaqe">
+    <div class="center">
+        <div class="dis left">
+            <h1>Bizə email yazın və ya <br /> zəng edin!</h1>
+            <h2>28 may küç,<br /> Bakı, Azərbaycan<br /> (401 1234 567)<br /> <a href="mailto:vuqar.ehmedov.94@gmail.com">vm@studio.com</a><br /><a
+                    href="http://www.vm-studio.comlu.com">www.vm-studio.comlu.com</a></h2>
+        </div>
+        <div class="dis middle">
+            <h1>Email yazın! Tezliklə cavab veriləcək!</h1>
+            <input type="text" value="" id="name" placeholder="Ad">
+            <input type="text" value="" id="email" placeholder="Email">
+            <input type="text" value="" id="message" placeholder="Mesaj">
+            <div class="send">
+                <a href="#">
+                    <em class="fa fa-envelope-o"></em>
+                    <span>Mesajı Göndər</span>
+                </a>
+            </div>
+        </div>
+        <div class="dis right">
+            <ul>
+                <li>
+                    <a href="#">
+                        <em class="fa fa-behance"></em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <em class="fa fa-twitter"></em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <em class="fa fa-dribbble"></em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <em class="fa fa-facebook-f"></em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <em class="fa fa-google-plus"></em>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6715.099463635772!2d-117.15023728046333!3d32.69801702599925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9536b25b6c3bd%3A0xf8de8b360a2ab15e!2sBarrio+Logan+Station!5e0!3m2!1sen!2s!4v1463762058944" width="100%" height="183" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</div>
+<!--==========================  Contact end  ===========================-->
+
+
+<div class="clear"></div>
+
+
+<!--============================  Footer  ============================-->
+<div class="footer">
+    <div class="main-footer">
+        <div class="center">
+            <div class="foot left">
+                <ul>
+                    <li><a href="index.html">Ana Səhifə</a></li>
+                    <li><a href="magaza.html">Mağaza</a></li>
+                    <li><a href="sifaris.html">Məhsul yoxdur?</a></li>
+                    <li><a href="elaqe.html">Əlaqə</a></li>
+                </ul>
+            </div>
+            <div class="foot middle">
+                <h1>Abunə Olun!</h1>
+                <ul>
+                    <li>
+                        <a href="#"><em class="fa fa-facebook-square" id="facebook"></em></a>
+                    </li>
+                    <li>
+                        <a href="#"><em class="fa fa-twitter-square" id="twitter"></em></a>
+                    </li>
+                    <li>
+                        <a href="#"><em class="fa fa-google-plus-square" id="google"></em></a>
+                    </li>
+                    <li>
+                        <a href="#"><em class="fa fa-linkedin-square" id="linkedin"></em></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="foot right">
+                <a href="index.html"><img src="images/logo.png" align="right" alt="" width="350" height="70" /></a>
+                <p>© Bütün Hüquqlar Qorunur.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="center">
+            <h1>Bu vebsayt <a href="http://mathouse.org/vugarcv/">Vüqar Əhmədov</a> tərəfindən yaradılıb.</h1>
+        </div>
+    </div>
+</div>
+<!--==========================  Footer End  ===========================-->
+
+
+</body>
+</html>
